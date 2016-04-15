@@ -31,7 +31,7 @@ HTMLWidgets.widget({
       instance.plotly = true;
       instance.autosize = x.layout.autosize;
     } else {
-      Plotly.newPlot(graphDiv, x.data, x.layout);
+      Plotly.newPlot(graphDiv, x.data, x.layout, {displaylogo: false});
     }
     
     sendEventData = function(eventType) {
